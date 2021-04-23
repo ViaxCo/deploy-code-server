@@ -47,9 +47,9 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
 # Update npm
-RUN npm install -g npm@latest
+RUN sudo npm install -g npm@latest
 # Install Yarn
-RUN npm install -g yarn
+RUN sudo npm install -g yarn
 
 # -----------
 
