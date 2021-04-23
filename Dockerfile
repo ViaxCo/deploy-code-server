@@ -22,9 +22,17 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # You can add custom software and dependencies for your environment below
 # -----------
 
-# Install a VS Code extension:
+# Install VS Code extensions:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
-# RUN code-server --install-extension esbenp.prettier-vscode
+RUN code-server --install-extension esbenp.prettier-vscode
+RUN code-server --install-extension ahmadawais.shades-of-purple
+RUN code-server --install-extension dsznajder.es7-react-js-snippets
+RUN code-server --install-extension formulahendry.auto-close-tag
+RUN code-server --install-extension dbaeumer.vscode-eslint
+RUN code-server --install-extension eamodio.gitlens
+RUN code-server --install-extension xabikos.JavaScriptSnippets
+RUN code-server --install-extension christian-kohler.path-intellisense
+RUN code-server --install-extension bradlc.vscode-tailwindcss
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
