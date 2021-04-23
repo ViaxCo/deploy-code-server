@@ -36,6 +36,7 @@ RUN code-server --install-extension bradlc.vscode-tailwindcss
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
+RUN sudo apt-get install -y vim
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
