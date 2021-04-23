@@ -43,8 +43,13 @@ RUN sudo apt-get install -y vim
 
 
 # Install NodeJS
-RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
+RUN sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 RUN sudo apt-get install -y nodejs
+
+# Update npm
+RUN npm install -g npm@latest
+# Install Yarn
+RUN npm install -g yarn
 
 # -----------
 
